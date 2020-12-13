@@ -1,9 +1,8 @@
-.title {
+.outlineCode {
   display: block;
   text-align: center;
 }
-
-.title div {
+.outlineCode > * {
   display: inline-block;
   color: #eee;
 
@@ -17,8 +16,14 @@
   padding: 0.2em 3em;
 }
 
-.title .userTypeChar {
+.outlineCode .userTypeChar {
   color: #999;
+}
+
+.outlineCode .cursor {
+  margin-left: 0.5em;
+  border-right: 1px solid #eee;
+  animation: cursorBlink 1s step-start infinite;
 }
 
 @keyframes cursorBlink {
@@ -28,13 +33,4 @@
   50% {
     opacity: 0%;
   }
-}
-
-.title .cursor {
-  margin-left: 0.5em;
-  border-right: 1px solid #eee;
-  /*animation-name: cursorBlink;
-   animation-duration: 1s;
-*/
-  animation: cursorBlink 1s step-start infinite;
 }

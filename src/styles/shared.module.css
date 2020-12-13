@@ -9,3 +9,31 @@
 .layout h2 {
   text-align: center;
 }
+
+.outlineCode {
+  display: block;
+  text-align: center;
+}
+.outlineCode > * {
+  display: inline-block;
+  color: #eee;
+
+  font-size: 1.5rem;
+  font-family: --font-mono;
+  font-weight: bold;
+
+  background-color: #555;
+  border-radius: 0.75em;
+
+  padding: 0.2em 3em;
+}
+
+.outlineCode .userTypeChar {
+  color: #999;
+}
+
+.outlineCode .cursor {
+  margin-left: 0.5em;
+  border-right: 1px solid #eee;
+  animation: cursorBlink 1s step-start infinite;
+}

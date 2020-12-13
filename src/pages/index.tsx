@@ -10,7 +10,7 @@ export default () => (
   <>
     <Header titlePre="Home" />
     <div className={sharedStyles.layout}>
-      <div className={homeStyle.title}>
+      <div className={homeStyle.outlineCode}>
         <h1>
           [visitor@flisan ~]
           <span className={homeStyle.userTypeChar}>$ </span>
