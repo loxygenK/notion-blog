@@ -11,11 +11,11 @@ export default () => (
     <Header titlePre="Home" />
     <div className={sharedStyles.layout}>
       <div className={homeStyle.title}>
-        <div>
+        <h1>
+          [visitor@flisan ~]
           <span className={homeStyle.userTypeChar}>$ </span>
-          cat flisan
           <span className={homeStyle.cursor} />
-        </div>
+        </h1>
       </div>
       <h2>Inspect what Flisan look like</h2>
     </div>
