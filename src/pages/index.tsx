@@ -17,16 +17,7 @@ export default () => (
           <span className={homeStyle.cursor} />
         </div>
       </div>
-      <h2>
-        Blazing Fast Notion Blog with Next.js'{' '}
-        <ExtLink
-          href="https://github.com/vercel/next.js/issues/9524"
-          className="dotted"
-          style={{ color: 'inherit' }}
-        >
-          SSG
-        </ExtLink>
-      </h2>
+      <h2>Inspect what Flisan look like</h2>
     </div>
   </>
 )
