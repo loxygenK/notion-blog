@@ -3,11 +3,12 @@ export const getBlogLink = (slug: string) => {
 }
 
 export const getDateStr = date => {
-  return new Date(date).toLocaleString('en-US', {
-    month: 'long',
-    day: '2-digit',
-    year: 'numeric',
-  })
+  let dt = new Date(date)
+  let y = dt.getFullYear()
+  let m = ('00' + (dt.getMonth() + 1)).slice(-2)
+  let d = ('00' + dt.getDate()).slice(-2)
+  let result = y + '/' + m + '/' + d
+  return result
 }
 
 export const postIsPublished = (post: any) => {

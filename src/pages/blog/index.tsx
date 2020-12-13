@@ -87,11 +87,11 @@ export default ({ posts = [], preview }) => {
                   </div>
                 </Link>
               </h3>
+              <div className="posted">
+                {post.Date ? getDateStr(post.Date) : 'Posted date unavailable'}
+              </div>
               {post.Authors.length > 0 && (
                 <div className="authors">By: {post.Authors.join(' ')}</div>
-              )}
-              {post.Date && (
-                <div className="posted">Posted: {getDateStr(post.Date)}</div>
               )}
               <p>
                 {(!post.preview || post.preview.length === 0) &&
