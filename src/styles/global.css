@@ -394,6 +394,21 @@ footer span:nth-child(3) a {
   padding: 0.2em 3em;
 }
 
-.outlineCode .userTypeChar {
+.userTypeChar {
   color: #999;
+}
+
+.cursor {
+  margin-left: 0.5em;
+  border-right: 1px solid #eee;
+  animation: cursorBlink 1s step-start infinite;
+}
+
+@keyframes cursorBlink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
 }
