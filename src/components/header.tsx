@@ -8,7 +8,7 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'cd ~', page: '/' },
   { label: 'ls ~/post/', page: '/blog' },
   { label: 'write flisan', page: '/contact' },
-  { label: 'cd ~/source/', link: 'https://github.com/ijjk/notion-blog' },
+  { label: 'cd ~/source/', link: 'https://github.com/loxygenK/notion-blog' },
 ]
 
 const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
