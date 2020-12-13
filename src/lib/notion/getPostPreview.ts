@@ -21,7 +21,9 @@ export async function getPostPreview(pageId: string) {
     .splice(0, dividerIndex)
     .filter(
       ({ value: { type, properties } }: any) =>
-        !nonPreviewTypes.has(type) && properties
+        !nonPreviewTypes.has(type) &&
+        properties &&
+        properties.title['0'][0] !== '‣'
     )
     .map((block: any) => block.value.properties.title)
 

@@ -10,6 +10,10 @@ export default async function getPageData(pageId: string) {
       blocks.splice(0, 3)
     }
 
+    if (blocks[0]?.value?.properties?.title['0'][0] === '‣') {
+      blocks.splice(0, 1)
+    }
+
     return { blocks }
   } catch (err) {
     console.error(`Failed to load pageData for ${pageId}`, err)
