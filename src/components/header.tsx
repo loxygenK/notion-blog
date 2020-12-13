@@ -21,7 +21,7 @@ export default ({ titlePre = '' }) => {
       <Head>
         <title>visitor@flisan:{titlePre ?? '~'} - browser</title>
         <meta name="description" content="Flisan's blog." />
-        <meta name="og:title" content="blog view --user flisan" />
+        <meta name="og:title" content='$ blog view --user="flisan"' />
         <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:site" content="@loxygen_k" />
         <meta name="twitter:card" content="summary_large_image" />
